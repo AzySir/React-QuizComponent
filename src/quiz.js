@@ -7,7 +7,7 @@ class Quiz extends Component {
         super(props); 
         this.state = { quiz_position: 1 }       
     }  
-
+//Change file name here
     render() {
         return (
             <div>
