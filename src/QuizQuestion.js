@@ -4,7 +4,7 @@ import QuizQuestionButton from './QuizQuestionButton.js'
 
 class QuizQuestion extends Component {
     handleClick() {
-        const buttonText;
+        const buttonText = "hello";
 
 
     }
@@ -16,9 +16,9 @@ class QuizQuestion extends Component {
             </section>
             <section className="buttons">
                 <ul>
-                    {this.props.answer_options.map((answer_option,index) => { 
+                    {this.props.quiz_question.answer_options.map((answer_option,index) => 
                         <QuizQuestionButton button_text={answer_option} key={index} clickHandler={this.handleClick.bind(this)} />
-                    })}
+                    )}
                 </ul>
             </section>
         </main>
