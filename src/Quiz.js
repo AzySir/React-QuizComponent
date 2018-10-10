@@ -11,9 +11,7 @@ class Quiz extends Component {
         this.state = { quiz_position: 1 }       
     }  
     showNextQuestion() {
-        this.setState({ 
-            quiz_question: this.state.quiz_question + 1
-        })
+        this.setState({quiz_position: this.state.quiz_position + 1});
     }
 //Change file name here
     render() {
