@@ -1,0 +1,36 @@
+.nav {
+    background-color:#fafafa;
+    height:80px;
+}
+
+.nav li {
+    color:#222 !important;
+    list-style-type:none;
+    text-decoration:none;
+    display:inline-block;
+    padding-right:3%;
+    padding-left:3%;
+    line-height:80px;
+    font-weight:lighter;
+    letter-spacing:0.5px;
+    font-size:15px;
+}
+
+.nav li:hover {
+    border-bottom:5px solid #484848;
+}
+
+.nav a {
+    text-decoration:none;
+}
+
+.main {
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:3%;
+    color:#383838;
+}
+
+.main p {
+    line-height:150%;
+}

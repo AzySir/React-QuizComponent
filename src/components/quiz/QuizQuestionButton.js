@@ -1,9 +1,11 @@
 /* QuizQuestionButton.js */
 import React, { Component } from 'react'; 
+import '../../css/index.css'
 
 class QuizQuestionButton extends Component {
     handleClick () {
         this.props.clickHandler(this.props.button_text)
+        console.log("yes");
     }
     render () {
         return(

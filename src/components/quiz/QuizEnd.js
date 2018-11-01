@@ -1,18 +1,24 @@
 /* QuizEnd.js */
 import React, { Component } from 'react';
 
+import {
+    BrowserRouter as Router,
+    Link
+  } from 'react-router-dom'
+
 class QuizEnd extends Component { 
     handleResetClick() {
         this.props.resetClickHandler();
-        
     }
     render() {
-        const isQuizEnd = true;
+        //const isQuizEnd = true;
         return (
+            <Router>
             <div>
                 <p>Thanks for playing!</p>
-                <a href='' onClick={this.handleResetClick.bind(this)}>Reset Quiz</a>
+                <Link to='/work/quiz/' onClick={this.handleResetClick.bind(this)}>Reset Quiz</Link>
             </div>
+            </Router>
         )
     }
 }
