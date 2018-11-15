@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import '../css/create.css'
+//const writeJsonFile = require('write-json-file'); 
 var quizData = require('./quiz/quiz_data.json')
 var fs = require('fs');
+
+
 
 class CreateForm extends Component {
     constructor() {
@@ -21,24 +24,19 @@ class CreateForm extends Component {
     }
 
     checkQuestionAndAnswer = () => {
-        //console.log("Submit");
-        //console.log(quizData);
-        //console.log(quizData.quiz_questions[0].id  + "|" + typeof quizData);
-
         var quizQuestionIndex = quizData.quiz_questions.length;
         console.log(quizQuestionIndex);
-        
-        
         var newQuestion = {
             "id": quizQuestionIndex + 1,
             "instruction_text": this.state.question,
             "answer_options": [this.state.answer1, this.state.answer2, this.state.answer3, this.state.answer4],
             "answer": this.state.answer1
         }
-        quizData.quiz_questions[quizQuestionIndex] = Object.assign(newQuestion, quizData); //How to Append an Object
-        
+        quizData.quiz_questions[quizQuestionIndex] = Object.assign(newQuestion); //How to Append an Object
         console.log(quizData);
-        
+        /*(async () => {
+            await writeJsonFile('foo.json', quizData);
+        })();*/
     }   
         
 /*

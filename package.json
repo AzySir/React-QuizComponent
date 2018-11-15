@@ -3,9 +3,15 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "create-react-app": "^2.0.4",
     "react": "16.2.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "16.2.0",
-    "react-scripts": "1.1.1"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.1",
+    "write-json-file": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,6 +53,8 @@
     "enzyme-adapter-react-16": "1.1.1",
     "esprima": "4.0.0",
     "react-test-renderer": "16.3.1",
-    "sinon": "5.0.1"
+    "sinon": "5.0.1",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.14.0"
   }
 }
